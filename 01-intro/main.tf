@@ -16,6 +16,14 @@ variable "y"{
 }
 #List can have a combination of types also
 
+#Map Variable
+variable "z" {
+  default = {
+    name ="Sai"
+    age = 20
+  }
+}
+
 #Print Variable Output
 output "x" {
   value = var.x
@@ -38,6 +46,11 @@ output "y3" {
 }
 output "y4" {
   value = var.y[3]
+}
+
+#Accessing Map Variable
+output "z" {
+  value = "Name - ${var.z["name"]}, Age - ${var.z["age"]}"
 }
 
 
