@@ -20,7 +20,7 @@ variable "y"{
 variable "z" {
   default = {
     name ="Sai"
-    age = 20
+    age = 23
   }
 }
 
