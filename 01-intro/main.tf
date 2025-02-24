@@ -30,3 +30,14 @@ output "x1" {
 output "y1" {
   value = var.y[0]
 }
+output "y2" {
+  value = var.y[1]
+}
+output "y3" {
+  value = var.y[2]
+}
+output "y4" {
+  value = var.y[3]
+}
+
+
