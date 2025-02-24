@@ -1,0 +1,1 @@
+class = "AWS DevSecOps by Join DevOps"

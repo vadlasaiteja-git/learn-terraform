@@ -62,3 +62,15 @@ variable "input" {}
 output "input" {
   value = var.input
 }
+
+#auto.tfvars -  These files are automatically loaded.
+
+variable "class" {}
+output "class" {
+  value = var.class
+}
+
+variable "trainer" {}
+output "trainer" {
+  value = var.trainer
+}
