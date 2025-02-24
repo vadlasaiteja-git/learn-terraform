@@ -53,4 +53,12 @@ output "z" {
   value = "Name - ${var.z["name"]}, Age - ${var.z["age"]}"
 }
 
+#### Variables from another files
 
+# tfvars - manually loaded, Meaning these files are loaded to command line by using -var-file option
+# terraform apply -auto-approve -var-file=data.tfvars
+
+variable "input" {}
+output "input" {
+  value = var.input
+}

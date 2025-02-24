@@ -1,0 +1,1 @@
+input = "Welcome to  Terraform"
