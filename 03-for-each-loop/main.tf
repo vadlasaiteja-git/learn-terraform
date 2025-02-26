@@ -10,7 +10,7 @@ resource "null_resource" "test" {
 
 variable "x" {
   default = {
-    i = 100,
-    j = 200
+    j = 100,
+    i = 200
   }
 }
