@@ -23,5 +23,5 @@ variable "content" {
 # Now we can use this as an advantage and decide whether we can run this resource or not using a count loop
 
 resource "null_resource" "test" {
-  count = 1
+  count = var.content == null && var.content == "" ? 0 : 1
 }
