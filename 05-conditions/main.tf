@@ -25,3 +25,11 @@ variable "content" {
 resource "null_resource" "test" {
   count = var.content == null && var.content == "" ? 0 : 1
 }
+
+variable "x" {
+  type = number
+}
+
+output "x" {
+  value = var.x == 1 ? 100 : var.x == 2 ? 200 : 0
+}
